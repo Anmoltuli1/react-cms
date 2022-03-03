@@ -27,7 +27,6 @@ class Tes extends Component{
             {link:'sample2.html',name:'Sample 3'},
           ]
         },
-        {iconClassname:'fa fa-weixin',link:'chat',name:'Chat',pesan:{klass:'label-warning',teks:'new'}},
       ]
     })
   }
@@ -81,8 +80,6 @@ class Tes extends Component{
                 <input type="text" className="form-control" placeholder="Search..."/>
                 <i className="fa fa-search search-icon"></i>
               </div>
-              <button  className="btn btn-primary pull-right">
-              <i className="fa fa-eye fa-lg"></i> View all orders </button>
             </div>
           </BoxHeader>
 
@@ -100,14 +97,14 @@ export default connect()(Tes)
 //================================ Data Samples =====================================
 const data = {
   listInfo:[
-    {iconClassname:'fa fa-user red-bg',headline:'User',value:3000},
+    {iconClassname:'fa fa-user emerald-bg',headline:'User',value:3000},
     {iconClassname:'fa fa-shopping-cart emerald-bg',headline:'Purchases',value:658},
-    {iconClassname:'fa fa-money green-bg',headline:'Income',value:'8400',symbol:'&#36;'},
-    {iconClassname:'fa fa-eye yellow-bg',headline:'Monthly Visits',value:12526},
+    {iconClassname:'fa fa-money emerald-bg',headline:'Income',value:'8400',symbol:'&#36;'},
+    {iconClassname:'fa fa-eye emerald-bg',headline:'Monthly Visits',value:12526},
   ],
   //==========================================================================
   listInfo2:[
-    { value:'2.562',headline:'Users',progress:'60%',className:'red-bg',
+    { value:'2.562',headline:'Users',progress:'60%',className:'emerald-bg',
       subinfo:[
         {iconDesc:'fa fa-arrow-circle-o-up',desc:'10% higher than last week'},
         {iconDesc:'fa fa-users',desc:'29 new users'},
@@ -119,7 +116,7 @@ const data = {
         {iconDesc:'fa fa-globe',desc:'84.912 last week'},
       ]
     },
-    { value:'923',headline:'Orders',progress:'42%',className:'green-bg',
+    { value:'923',headline:'Orders',progress:'42%',className:'emerald-bg',
       subinfo:[
         {iconDesc:'fa fa-arrow-circle-o-up',desc:'15% higher than last week'},
         {iconDesc:'fa fa-shopping-cart',desc:'8 new orders'},
@@ -132,7 +129,7 @@ const dataTable = {
   header:['Order ID','Date','Customer','Status','Price',''],
   body:[
     [ <button className="link-button a">#5832</button>,
-      '2013/08/08',
+      '2022/03/03',
       <button className="link-button a">John Wayne</button>,
       <span className="label label-warning">On hold</span>,
       <span dangerouslySetInnerHTML={{__html: '&dollar; 923.93'}} />,
@@ -144,7 +141,7 @@ const dataTable = {
       </button>
     ],
     [ <button className="link-button a">#8002</button>,
-      '2013/08/08',
+      '2022/03/03',
       <button className="link-button a">Robert De Niro</button>,
       <span className="label label-success">Completed</span>,
       <span dangerouslySetInnerHTML={{__html: '&dollar; 825.50'}} />,
@@ -156,7 +153,7 @@ const dataTable = {
       </button>
     ],
     [ <button className="link-button a">#2547</button>,
-      '2013/08/08',
+      '2022/03/03',
       <button className="link-button a">Anthony Hopkins</button>,
       <span className="label label-info">Pending</span>,
       <span dangerouslySetInnerHTML={{__html: '&dollar; 1.625.50'}} />,
@@ -168,7 +165,7 @@ const dataTable = {
       </button>
     ],
     [ <button className="link-button a">#9274</button>,
-      '2013/08/08',
+      '2022/03/03',
       <button className="link-button a">Charles Chaplin</button>,
       <span className="label label-danger">Cancelled</span>,
       <span dangerouslySetInnerHTML={{__html: '&dollar; 35.34'}} />,
@@ -180,7 +177,7 @@ const dataTable = {
       </button>
     ],
     [ <button className="link-button a">#8463</button>,
-      '2013/08/08',
+      '2022/03/03',
       <button className="link-button a">Gary Cooper</button>,
       <span className="label label-success">Completed</span>,
       <span dangerouslySetInnerHTML={{__html: '&dollar; 34.199.99'}} />,

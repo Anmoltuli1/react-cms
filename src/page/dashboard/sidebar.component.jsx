@@ -7,7 +7,7 @@ class DashboardSidebar extends Component{
     render(){
         let userDetail = {...this.props.userDetail};
         let {sidebarList,...props} = this.props;
-        userDetail.name = userDetail.name.substr(0,8);
+        // userDetail.name = userDetail.name.substr(0,8);
         let LIST = this.props.sidebarList.map( (val,k) => {
             return <LiDropdownSidebar key={k} obj={val} {...props} />;
         });
@@ -16,11 +16,11 @@ class DashboardSidebar extends Component{
                 <section id="col-left" className="col-left-nano">
                 <div id="col-left-inner" className="col-left-nano-content">
                     <div id="user-left-box" className="clearfix hidden-sm hidden-xs">
-                        <img alt="" src={asset(userDetail.photo)} />
-                        <div className="user-box">
+                        {/* <img alt="" src={asset(userDetail.photo)} /> */}
+                        {/* <div className="user-box">
                             <span className="name"> Welcome<br/> {userDetail.name} </span>
                             <span className="status"> <i className="fa fa-circle"></i> Online </span>
-                        </div>
+                        </div> */}
                     </div>
                     <div className={'collapse navbar-collapse navbar-ex1-collapse' + (this.props.navSmallMini ? ' in' : '') } id="sidebar-nav">
                         <ul className="nav nav-pills nav-stacked" >

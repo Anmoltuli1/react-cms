@@ -50,14 +50,14 @@ class DashboardConfig extends Component{
             <ClickOutside id="config-tool" className={this.state.show?'opened':'closed'}
               onClickOutside={this.toggleOnBlur.bind(this)}
             >
-              <a href="clickme" id="config-tool-cog" onClick={this.toggleShowConfig.bind(this)} > <i className="fa fa-cog"></i> </a>
+              {/* <a href="clickme" id="config-tool-cog" onClick={this.toggleShowConfig.bind(this)} > <i className="fa fa-cog"></i> </a>
               <div id="config-tool-options">
                   <h4>Layout Options</h4>
                   <ul> {LIST} </ul>
                   <br/>
                   <h4>Skin Color</h4>
                   <ul id="skin-colors" className="clearfix"> {LIST2} </ul>
-              </div>
+              </div> */}
             </ClickOutside>
         );
     }

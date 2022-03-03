@@ -34,9 +34,10 @@ class DashboardHeader extends Component{
 			<header className="navbar" id="header-navbar">
 				<div className="container">
 					<a href="/" id="logo" className="navbar-brand">
-						<img src={asset("/external/img/logo.png")} alt="Logo" className="normal-logo logo-white"/>
+            <h1 style={{color: "white"}}>CMS</h1>
+						{/* <img src={asset("/external/img/logo.png")} alt="Logo" className="normal-logo logo-white"/>
 						<img src={asset("/external/img/logo-black.png")} alt="Logo" className="normal-logo logo-black"/>
-						<img src={asset("/external/img/logo-small.png")} alt="Logo" className="small-logo hidden-xs hidden-sm hidden"/>
+						<img src={asset("/external/img/logo-small.png")} alt="Logo" className="small-logo hidden-xs hidden-sm hidden"/> */}
 					</a>
 					<div className="clearfix">
 						<button onClick={this.handleClick2.bind(this)} className="navbar-toggle" data-target=".navbar-ex1-collapse" data-toggle="collapse" type="button">
@@ -45,9 +46,9 @@ class DashboardHeader extends Component{
 						</button>
 						<div className="nav-no-collapse navbar-left pull-left hidden-sm hidden-xs">
 						<ul className="nav navbar-nav pull-left">
-							<li>
+							{/* <li>
 							<a href="clickme" onClick={this.handleClick.bind(this)} className="btn" id="make-small-nav"> <i className="fa fa-bars"></i> </a>
-							</li>
+							</li> */}
 						</ul>
 						</div>
 
@@ -109,46 +110,8 @@ class DashboardHeaderNavBar extends Component{
                 <ClickOutside componentType="li" onClickOutside={this.handleNotifOnBlur.bind(this)}
                   className={ 'dropdown hidden-xs ' + (this.state.notif ? 'open' : '' )}
                 >
-                  <a href="clickme" role="button" onClick={this.onClickNotif.bind(this)} className="btn dropdown-toggle" data-toggle="dropdown">
-                    <i className="fa fa-warning"></i> <span className="count">{cntList}</span>
-                  </a>
-                  <ul className="dropdown-menu notifications-list">
-                      <li className="pointer">
-                          <div className="pointer-inner"> <div className="arrow"></div> </div>
-                      </li>
-                      <li className="item-header"> { cntList > 0 ? 'You have '+cntList+' new notifications' : 'Notif Message Not Found' } </li>
-                      {LIST}
-                      <li className="item-footer"> <a href="clickme" onClick={e=>e.preventDefault()}> View all notifications </a> </li>
-                  </ul>
                 </ClickOutside>
-                <ClickOutside id="view-msg-notif" componentType="li" onClickOutside={this.toggleMessageNotif.bind(this)}
-                  className={'dropdown hidden-xs '+ (this.state.messageNotif ? 'open' : '' )}
-                >
-                  <a href="clickme" role="button" onClick={this.onClickMessageNotif.bind(this)} className="btn dropdown-toggle" data-toggle="dropdown">
-                    <i className="fa fa-envelope-o"></i> <span className="count"> {cntList2} </span>
-                  </a>
-                  <ul className="dropdown-menu notifications-list messages-list">
-                    <li className="pointer"> <div className="pointer-inner"> <div className="arrow"></div> </div> </li>
-                     {LIST2}
-                    <li className="item-footer"> <a href="clickme" onClick={e=>e.preventDefault()}> View all messages </a> </li>
-                  </ul>
-                </ClickOutside>
-                <li className="hidden-xs">
-                  <Link to={'/dashboard/settings'} className="btn" >
-                    <i className="fa fa-cog"></i>
-                  </Link>
-                 </li>
-                 <ClickOutside id="view-user-nav" componentType="li" onClickOutside={this.toggleProfileOnBlur.bind(this)}
-                   className={'profile-dropdown dropdown '+ (this.state.profileDD ? 'open' : '' )}
-                 >
-                   <a href="clickme" role="button" onClick={this.onClickProfileDropdown.bind(this)} className="btn dropdown-toggle" data-toggle="dropdown">
-                     <img src={asset(userDetail.photo)} alt="User profile" />
-                     <span className="hidden-xs">{userDetail.name.substr(0,16)}</span> <b className="caret"></b>
-                   </a>
-                   <ul className="dropdown-menu ">
-                     {LIST3}
-                   </ul>
-                 </ClickOutside>
+
 
                 <li className="hidden-xxs"> <a href="clickme" className="btn" onClick={this.clickLogout.bind(this)} > <i className="fa fa-power-off"></i> </a> </li>
                 </ul>

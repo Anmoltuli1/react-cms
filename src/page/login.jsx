@@ -40,7 +40,7 @@ class Login extends Component{
                             <div className="col-xs-12">
             <header id="login-header">
                 <div id="login-logo">
-                    { loginPage.logo_img ? <img alt="" src={loginPage.logo_img}  /> : <img alt="" /> }
+                    <h4 style={{color: "white"}}>React CMS</h4>
                 </div>
             </header>
                             <div id="login-box-inner">
@@ -52,15 +52,6 @@ class Login extends Component{
                 <div className="input-group">
                     <span className="input-group-addon"><i className="fa fa-key"></i></span>
                     <input onKeyPress={this.handleKeyPress.bind(this)} id="loginpass" disabled={this.state.isDisabled} name="password" ref="password" type="password" placeholder="Type Your Password" className="form-control" />
-                </div>
-                <div id="remember-me-wrapper">
-                    <div className="row">
-                        <div className="col-xs-6">
-                            <div className="checkbox-nice">
-                                <input type="checkbox" id="remember-me" name="remember" /> <label htmlFor="remember-me"> Remember Me </label>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </form>
 
@@ -76,14 +67,6 @@ class Login extends Component{
                 </div>
             </div>
 
-            <div className="row">
-                <div className="col-xs-12 col-sm-6">
-                    <a className="btn btn-primary col-xs-12 btn-facebook" rel="noopener noreferrer" target="_blank" href="https://github.com/fearlessforever"><i className="fa fa-facebook"></i> Facebook</a>
-                </div>
-                <div className="col-xs-12 col-sm-6">
-                    <a className="btn btn-primary col-xs-12 btn-twitter" rel="noopener noreferrer" target="_blank" href="https://github.com/fearlessforever"> <i className="fa fa-twitter"></i> Twitter </a>
-                </div>
-            </div>
             <div className="row">
                 <div className="col-xs-12">
                     <a href="/tes"><i > {this.state.nama_system} </i></a>

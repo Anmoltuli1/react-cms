@@ -6,6 +6,6 @@ import Chat from 'src/page/dash/conversation'
 export default [
   {path:'',component: MainPage },
   {path:'/logout',component: Logout },
-  {path:'/chat',component: Chat },
+  // {path:'/chat',component: Chat },
   //{path:'/logout',component: Loader(import('src/page/dash/logout')) },
 ]

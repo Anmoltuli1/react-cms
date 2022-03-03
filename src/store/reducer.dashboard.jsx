@@ -22,7 +22,7 @@ import {
 } from './type'
 
 const dashBoard = (state={
-	user:{photo:'/external/img/no_image.jpg',name:'No Name'},
+	// user:{photo:'/external/img/no_image.jpg',name:'No Name'},
 	accesstoken:{expiredIn:0},
 	notif:{pesan:0,notif:0},
 	page:'',
